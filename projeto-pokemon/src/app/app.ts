@@ -12,7 +12,7 @@ import { PokeData } from './poke-data';
 export class App implements OnInit {
   protected title = 'projeto-pokemon';
   poke: any;
-  url = 'https://pokeapi.co/api/v2/pokemon';
+  url = 'https://pokeapi.co/api/v2/pokemon/ditto';
   constructor (private service: PokeData){}
   getPoke():void{
     this.service.getData(this.url).subscribe(data=>this.poke.data);
